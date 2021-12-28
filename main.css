@@ -14,8 +14,7 @@ div{
 }
 */
 #container{
-    display:flex;
-    align-items: center;
+    display:block
     border: solid gold 10px;
     height: 600px;
     width: 600px;
@@ -29,4 +28,24 @@ body{
     justify-content: center;
     
     
+}
+
+
+.box {
+    background: red;
+    border: black 1px solid;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 0;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+   
+}
+
+.row {
+    display: block;
+    float:left;
+    width:100%;
 }
