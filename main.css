@@ -1,0 +1,32 @@
+h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(255, 0, 0) 10px;
+}
+
+/*
+div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+*/
+#container{
+    display:flex;
+    align-items: center;
+    border: solid gold 10px;
+    height: 600px;
+    width: 600px;
+}
+
+body{
+    border: solid rgb(34, 15, 85) 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
