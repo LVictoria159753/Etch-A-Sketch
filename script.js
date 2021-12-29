@@ -46,6 +46,8 @@ function warmPen(){
 }
 
 
+// user input what grid size
+
 
 
     

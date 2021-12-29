@@ -25,9 +25,35 @@ button{
 button:hover{
 
     color:rgb(148, 34, 34);
+    
 }
 
+/* Submit button color choices*/
+.user-choice{
+    font-family:'Roboto',sans-serif;
+    font-size: 20px;
+    border:0.16em solid #FFFFFF;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding:0.5em 1.5em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+}
 
+.submit{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #d4e7f5 0%, #aaadf0 100%);
+    border:0.2em solid #FFFFFF;
+    padding: .3em
+
+}
+
+.textbox{
+    padding: .3em;
+    background-color: #e2e2f0 ;
+}
+
+/*Gradient + flexbox choices*/
 body{
 
     display: flex;
@@ -39,16 +65,15 @@ body{
     background: #43cea2;  /* fallback for old browsers */
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #0017ff 100%);
-      
     
 }
 
-
+/*Grid Box size*/
 .box {
     background: #FFFDD0;
     border: black 1px solid;
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
 
 }
 
