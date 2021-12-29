@@ -38,6 +38,13 @@ function eraseColor(){
         pen= "white";})
 }
 
+const warmpen=document.querySelector(".warm");
+
+warmpen.addEventListener("click", warmPen)
+function warmPen(){
+    pen= "rgb(148, 34, 34, .1)";
+}
+
 
 
 
