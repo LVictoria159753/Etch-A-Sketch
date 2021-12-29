@@ -1,18 +1,19 @@
 function divBlock(boxnum) {
     for (let i=0; i<boxnum;i++){
-        let row= document.createElement('div');
-        row.className = "row";
-        row.addEventListener('mouseover', changeColor);
-        function changeColor(){
-            row.style.background ="pink";}
+        //box creation outer row
+            let row= document.createElement('div');
+            row.className = "row";
+        //mouse hover function
+                row.addEventListener('mouseover', changeColor);
+                function changeColor(){row.style.background ="pink";}
      for (let j=0; j<boxnum;j++){
         let box = document.createElement('div');
-            box.addEventListener('mouseover', changeColor);
-               box.className = "box";
-               row.appendChild(box);
-               function changeColor(){
-                box.style.background ="pink";}
-               
+            //box creation inner loop
+                box.className = "box";
+                row.appendChild(box);
+            //mouse hover function
+                box.addEventListener('mouseover', changeColor);
+                function changeColor(){box.style.background ="pink";}
     }
         document.getElementById('mini').appendChild(row); 
         
@@ -21,13 +22,18 @@ function divBlock(boxnum) {
 }
     divBlock(16);
 
-   
 
+//refresh button
+const refresh = document.querySelector("#clear");
+refresh.addEventListener("click", clear);
 
+function clear(){
+    location.reload();
+}
 
 
     
-/*
+/* Scrap Code
     let x=document.getElementsByClassName(".box");
 
     x.addEventListener("mouseover", function(event){
