@@ -1,3 +1,4 @@
+let pen= '#D3D3D3';
 function divBlock(boxnum) {
     for (let i=0; i<boxnum;i++){
         //box creation outer row
@@ -10,7 +11,7 @@ function divBlock(boxnum) {
                 row.appendChild(box);
             //mouse hover function
                 box.addEventListener('mouseover', changeColor);
-                function changeColor(){box.style.background = "blue";}
+                function changeColor(){box.style.background = pen;}
     }
         document.getElementById('mini').appendChild(row); 
         
@@ -26,6 +27,15 @@ refresh.addEventListener("click", clear);
 
 function clear(){
     location.reload();
+}
+
+//erase button
+const erase = document.querySelector("#erase");
+erase.addEventListener("click", eraseColor)
+
+function eraseColor(){
+    erase.addEventListener("mouseover",function(){
+        pen= "white";})
 }
 
 
