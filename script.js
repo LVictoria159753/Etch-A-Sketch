@@ -47,10 +47,13 @@ function warmPen(){
 
 
 // user input what grid size
+let x= document.getElementById("text").value;
 
-
-
-    
+submit.addEventListener("click", userinput);
+             
+function userinput(){
+  alert(x);  
+}
 /* Scrap Code
     let x=document.getElementsByClassName(".box");
 
@@ -88,3 +91,15 @@ for (let i=0; i<grid ;i++){
 
 divBlock(100);
 */
+
+
+/* Confusing things
+let submitButton= document.getElementById ("submit");
+let x= document.getElementById("text").value;
+
+submitButton.addEventListener("click", userinput);
+             
+function userinput(){
+  alert(x);  
+}
+    */
