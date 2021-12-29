@@ -3,9 +3,6 @@ function divBlock(boxnum) {
         //box creation outer row
             let row= document.createElement('div');
             row.className = "row";
-        //mouse hover function
-                row.addEventListener('mouseover', changeColor);
-                function changeColor(){row.style.background ="pink";}
      for (let j=0; j<boxnum;j++){
         let box = document.createElement('div');
             //box creation inner loop
@@ -13,7 +10,7 @@ function divBlock(boxnum) {
                 row.appendChild(box);
             //mouse hover function
                 box.addEventListener('mouseover', changeColor);
-                function changeColor(){box.style.background ="pink";}
+                function changeColor(){box.style.background = "blue";}
     }
         document.getElementById('mini').appendChild(row); 
         
@@ -30,6 +27,8 @@ refresh.addEventListener("click", clear);
 function clear(){
     location.reload();
 }
+
+
 
 
     
