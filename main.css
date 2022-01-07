@@ -70,6 +70,10 @@ body{
     background: #43cea2;  /* fallback for old browsers */
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #0017ff 100%);
+
+        
+    
+    
     
 }
 
@@ -79,27 +83,18 @@ body{
     border: black 1px solid;
     width: 36px;
     height: 36px;
+    border: solid .2px #8BC6EC; 
+    
 
 }
 
 .row {
     display: flex;
+    border: solid .2px #8BC6EC; 
 
 }
 
-#mini{
-    border: solid 20px #8BC6EC; ;
+#sketchpad{
+    border: solid 20px #d4e4ee; 
 }
 
-
-#container{
-
-    margin-top: 30px;
-    height:800px;
-    width: 800px;
-    background-color: bisque;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
