@@ -1,9 +1,13 @@
 let pen= '#D3D3D3';
+
+
 function divBlock(boxnum) {
+   sketchpad.innerHTML = "";
     for (let i=0; i<boxnum;i++){
         //box creation outer row
             let row= document.createElement('div');
             row.className = "row";
+           
      for (let j=0; j<boxnum;j++){
         let box = document.createElement('div');
             //box creation inner loop
@@ -11,14 +15,16 @@ function divBlock(boxnum) {
                 row.appendChild(box);
             //mouse hover function
                 box.addEventListener('mouseover', changeColor);
-                function changeColor(){box.style.background = pen;}
+                function changeColor(){box.style.background = pen;
+                }
+                
     }
-        document.getElementById('mini').appendChild(row); 
+        document.getElementById('sketchpad').appendChild(row); 
+       sketchpad.appendChild(row);
         
     }
-    
 }
-    divBlock(16);
+divBlock(16);
 
 
 //refresh button
@@ -46,14 +52,41 @@ function warmPen(){
 }
 
 
-// user input what grid size
-let x= document.getElementById("text").value;
 
-submit.addEventListener("click", userinput);
+//make grid
+document.getElementById("gridbtn").addEventListener('click' , () => {
+    let x = document.getElementById("gridinput").value;
+    if (x>100){
+        alert("Cell height/width is bigger than 100. Pick a number smaller than 100.")
+        return;}
+   // container.innerHTML = '';
+    divBlock(x);
+});
+
+//delete grid
+function deleteGrid() {
+    let sketchpad = document.getElementById("sketchpad");
+    while (sketchpad.firstChild) {
+        sketchpad.removeChild(sketchpad.lastChild);
+    }
+}
+
+
+
+/*
+
+// user input what grid size
+let submitBtn= document.querySelectorAll("submit").textContent;
+
+submitBtn= document.querySelectorAll("test").value;
+
+submitBtn.addEventListener("click", userinput);
              
 function userinput(){
-  alert(x);  
+  alert(submitBtn);  
 }
+*/
+
 /* Scrap Code
     let x=document.getElementsByClassName(".box");
 
@@ -102,4 +135,13 @@ submitButton.addEventListener("click", userinput);
 function userinput(){
   alert(x);  
 }
-    */
+
+
+submit.addEventListener("click",p2)
+
+function p2()
+{let x= document.getElementById("submit").textContent;
+
+document.getElementById("test").innerHTML=x;}
+
+*/

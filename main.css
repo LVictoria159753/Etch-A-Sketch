@@ -44,7 +44,7 @@ button:hover{
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #d4e7f5 0%, #aaadf0 100%);
     border:0.2em solid #FFFFFF;
-    padding: 5.em
+    padding: 1.em
    
 }
 
@@ -89,4 +89,17 @@ body{
 
 #mini{
     border: solid 20px #8BC6EC; ;
+}
+
+
+#container{
+
+    margin-top: 30px;
+    height:800px;
+    width: 800px;
+    background-color: bisque;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
