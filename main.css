@@ -79,22 +79,32 @@ body{
 
 /*Grid Box size*/
 .box {
+
     background: #FFFDD0;
     border: black 1px solid;
-    width: 36px;
-    height: 36px;
-    border: solid .2px #8BC6EC; 
+    
+    width:100%;
+    border: solid 2px #4745e4; 
+    
     
 
 }
 
 .row {
-    display: flex;
+
     border: solid .2px #8BC6EC; 
+    flex-grow:1;
+    display:flex;
+    align-self:stretch;
+
+
 
 }
 
 #sketchpad{
     border: solid 20px #d4e4ee; 
+    height: 100vh;
+    width: 100vh;
+    display:flex;
+    flex-direction:column;
 }
-
