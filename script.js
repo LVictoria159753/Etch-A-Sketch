@@ -1,6 +1,15 @@
+//purple pen color
+const warmpen=document.querySelector(".warm");
+
+warmpen.addEventListener("click", warmPen)
+function warmPen(){
+    pen= "rgb(148, 34, 34, .1)";
+}
+//set 1st pen color 
 let pen= '#D3D3D3';
 
 
+// creating div
 function divBlock(boxnum) {
    sketchpad.innerHTML = "";
     for (let i=0; i<boxnum;i++){
@@ -44,16 +53,8 @@ function eraseColor(){
         pen= "white";})
 }
 
-const warmpen=document.querySelector(".warm");
 
-warmpen.addEventListener("click", warmPen)
-function warmPen(){
-    pen= "rgb(148, 34, 34, .1)";
-}
-
-
-
-//make grid
+//takes user input for how many squares they want in the grid.
 document.getElementById("gridbtn").addEventListener('click' , () => {
     let x = document.getElementById("gridinput").value;
     if (x>100){
@@ -63,7 +64,8 @@ document.getElementById("gridbtn").addEventListener('click' , () => {
     divBlock(x);
 });
 
-//delete grid
+
+//Makes it so the grid is erase so user input grid can be placed in the same place as the old grid
 function deleteGrid() {
     let sketchpad = document.getElementById("sketchpad");
     while (sketchpad.firstChild) {
